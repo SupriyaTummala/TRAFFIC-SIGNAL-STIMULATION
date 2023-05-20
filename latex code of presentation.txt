@@ -1,0 +1,185 @@
+\documentclass{beamer}
+%INformation to be included in the title page:
+\title{\Huge\color{red} Traffic Light Simulation}
+\author{\large T.K.SUPRIYA - 21B01A54A9 - AI&DS\\
+        M.RAMA SATYA DEVI - 21B01A0225 - EEE\\
+        D.NEHA - 21B01A1241 - IT\\
+        R.VIDYA - 21B01A12F8 - IT\\
+        T.N.M.VSAILUSHA - 21B01A54B0 - AI&DS}
+\institute{\large SVECW}
+\date{March 25,2023}
+
+\begin{document}
+
+\frame{\titlepage}
+\begin{frame}
+\frametitle{\Huge\color{red} Introduction}
+It contains a 4-way traffic intersection with traffic signals controlling the flow of traffic in each direction. Each signal has a timer on top of it which shows the time remaining for the signal to switch from green to yellow, yellow to red, or red to green. Vehicles such as cars, bikes, buses, and trucks are generated, and their movement is controlled according to the signals and the vehicles around them.  
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{\Huge\color{red} Approach}
+\begin{enumerate}
+    \begin{itemize}
+        \item This is the code for  simulation of traffic management in a 4-Way intersection.It uses the pygame library to create a GUI(graphical user interface).\item The code initializes the pygame library,creates classes for the traffic signal and vehicles,and defines variables for vehicle properties and the stop line.\item The traffic class defines the red,yellow and green states of the signal.The vehicle class is a subclass of pygame's sprite class(The Sprite class is intended to be used as a base class for the different types of objects in the game.) and contains the properties of a vehicle like speed,lane,direction and a stopping point.\item The vehicles are stored in dictionary with respect to directions as keys and list of vehicles as values.\item The code sets the starting and stopping points of each vehicles based on the previous vehicles in the same lane.The GUI is updated with the render method of the vehicle class.
+    \end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{\Huge\color{red} Learnings}
+\begin{enumerate}
+    \begin{itemize}
+        \item\large \textbf{import random} -  used to generate random numbers
+        \item\large \textbf{import time}  -  to generate time
+        \item\large \textbf{import threading}  -  used to run multiple threads(Tasks,Function calls)  at the same time
+        \item\large \textbf{import pygame}  - development of multimedia applications like video games using python
+        \item\large\textbf{import sys} -  manipulate different parts of the python runtime environment
+    \end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{\Huge\color{red}Challenges}
+\begin{enumerate}
+    \begin{itemize}
+    \item\large \textbf{Modeling real-world traffic:} Accurately simulating the complex and unpredictable nature of real-world traffic is difficult.
+    \item\large \textbf{Representing all road users:} Simulating all road users, including vehicles, bicycles, pedestrians, and public transport, is challenging and requires accurate representation of their behavior and interactions.
+    \item\large \textbf{Dealing with non-linearity:} Traffic light systems are inherently non-linear and dynamic, making it difficult to model and simulate.
+    \item\large \textbf{Managing real time-data:} Incorporating real-time data from sensors,cameras,and other sources into traffic light simulations can be challenging and requires efficient data processing and management
+    \end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{\Huge\color{red}Statistics}
+\begin{enumerate}
+    \begin{itemize}
+    \item\large\textbf{\color{orange} Number of lines of code}:230
+    \item\large \textbf{Functions}:
+    
+   \item[\ding{*}] \textbf{def render(self,screen)} - to display the image on the screen\\
+   \item[\ding{*}] \textbf{def move(self)} - to control the movement of vehicles according to the traffic light and the vehicles ahead\\
+    \item[\ding{*}]\textbf{def initialize()} - initialization of signals with default values\\
+    \item[\ding{*}]\textbf{def repeat()} - the function repeat() is called at the end of the initialize() function above is a recursive function that runs our entire simulation.This is the driving force of our simulation\\
+    \item[\ding{*}]\textbf{def updateValues()} - update values of the signal timers after every second\\
+     \item[\ding{*}]\textbf{def generateVehicles()} - generating the vehicles in simulation
+    \end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic1.png}
+\caption{}{image1}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic2.png}
+\caption{}{image2}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic3.png}
+\caption{}{image3}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic4.png}
+\caption{}{image4}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic5.png}
+\caption{}{image5}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic6.png}
+\caption{}{image6}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic7.png}
+\caption{}{image7}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic8.png}
+\caption{}{image8}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{pic9.png}
+\caption{}{image9}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\color{red}Demo/Screen shots}
+\usepackage{graphics}
+\includegraphics[width=\linewidth]{out.png}
+\caption{}{output}
+\label{fig:my_label}
+\alert
+
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+   \Huge\color{red} THANK YOU
+\end{center}
+\end{frame}
+\end{document}
